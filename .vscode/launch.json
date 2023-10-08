@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-Application<01-deserializable-serializable>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.cer.deserializableserializable.Application",
+            "projectName": "01-deserializable-serializable",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
