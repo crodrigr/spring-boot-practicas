@@ -1,3 +1,3 @@
-# ModelMapper
+# Serialización y Deserialización 
 
-Este una ejemplo de como se crea un DTO para las clases de tipo Entity: Estundiante, Universidad, Matricula
+La serialización y deseralización sin usar **DTO** evitando al **redundancia ciclica** con **@JsonIgnoreProperties**
