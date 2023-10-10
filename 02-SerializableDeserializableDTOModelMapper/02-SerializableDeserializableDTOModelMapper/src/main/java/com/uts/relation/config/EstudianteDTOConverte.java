@@ -19,22 +19,7 @@ public class EstudianteDTOConverte {
 
     public EstudianteDTO converEstudianteDTO(EstudianteEntity estudiante){
 
-           
-                /*EstudianteDTO estudianteDTO=new EstudianteDTO();                
-                estudianteDTO.setId(estudiante.getId());
-                estudianteDTO.setNombre(estudiante.getNombre());
-                UniversidadDTO universidadDTO=new UniversidadDTO();
-                UniversidadEntity universidadEntity=estudiante.getUniversidad();
-                universidadDTO.setId(universidadEntity.getId());
-                universidadDTO.setNombre(universidadEntity.getNombre());
-                estudianteDTO.setUniversidad(universidadDTO);
-                if(estudiante.getMatricula()!=null){
-                MatriculaEntity matriculaEntity=estudiante.getMatricula();
-                MatriculaDTO matriculaDTO=new MatriculaDTO();
-                matriculaDTO.setId(matriculaEntity.getId());
-                matriculaDTO.setFeed(matriculaEntity.getFeed());
-                estudianteDTO.setMatricula(matriculaDTO);
-                }*/
+                          
                 EstudianteDTO estudianteDTO=dbm.map(estudiante,EstudianteDTO.class);
                 if(estudiante.getMatricula()!=null){
                   estudianteDTO.setMatriculaId(estudiante.getMatricula().getId());
