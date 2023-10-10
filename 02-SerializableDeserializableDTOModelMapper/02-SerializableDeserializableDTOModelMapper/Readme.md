@@ -25,3 +25,33 @@ private UniversidadEntity universidad;
 Esto asegura que cuando se serializa una instancia de la entidad que contiene esta relación, la propiedad `hibernateLazyInitializer` se ignore durante la serialización y evite problemas de serialización circular.
 
 Sin embargo, ten en cuenta que esta anotación solo se debe agregar cuando sea necesario y cuando enfrentes problemas de serialización circular específicos. No es necesario agregarla en todas partes, y en algunos casos, podría ser preferible manejar los problemas de serialización circular de otras maneras, como a través del uso de DTO (Objetos de Transferencia de Datos) o configuraciones personalizadas de Jackson.
+
+
+## 2. Implementación de ModelMapper
+
+Se debe colocar la dependencia de **ModelMapper** en el archivo **pom.xml** como se oberva en la siguiente imagen:
+
+![image](https://github.com/crodrigr/spring-boot-practicas/assets/31961588/f3515c79-0328-4586-bd1f-e4bf483fb365)
+
+
+#### 2.1 ModelMapperConfig
+
+En el directorio **config** se crea una clase **ModelMapper** la cual se define un **Bean** para implemetar el mapper.
+
+![image](https://github.com/crodrigr/spring-boot-practicas/assets/31961588/71df694a-36aa-4db1-8e9f-11f5ce889320)
+
+Se crean la clase **DTO**
+
+![image](https://github.com/crodrigr/spring-boot-practicas/assets/31961588/aa744ccb-e11a-4540-b7ae-3a2b185f3075)
+
+Se crea la clase **Convert**
+
+![image](https://github.com/crodrigr/spring-boot-practicas/assets/31961588/dfc589ec-3f98-41d0-92b8-cae3858bca22)
+
+Implementción convert Entity to DTO
+
+![image](https://github.com/crodrigr/spring-boot-practicas/assets/31961588/826c9b13-4b54-4010-b177-1dc700c95935)
+
+
+
+
