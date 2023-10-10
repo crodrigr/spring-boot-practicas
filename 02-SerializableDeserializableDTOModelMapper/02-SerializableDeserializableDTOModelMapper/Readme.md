@@ -2,6 +2,9 @@
 
 Este una ejemplo de como se crea un DTO para las clases de tipo Entity: Estundiante, Universidad, Matricula
 
+<br>
+<br>
+
 ## @JsonIgnoreProperties({"hibernateLazyInitializer"})
 
 Esta anotación evita que tengamos que usar DTO para manejar la respuesta que se están enviando en JSO
